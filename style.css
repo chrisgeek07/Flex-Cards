@@ -23,6 +23,7 @@ h1, h2, h3, p {
 
 h2 {
     font-family: 'Big Shoulders Display', cursive;
+    color: #fff;
 
 }
 
@@ -33,6 +34,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #fff;
 
 }
 
@@ -56,13 +58,14 @@ a {
 .text-container p {
     padding-top: 1em;
     font-size: .75em;
+    color: #fff;
 }
 
 .card {
     flex-direction: row;
     width: 200px;
     padding: 2em 2em;
-    color: #fff;
+    
 
 }
 
@@ -118,11 +121,17 @@ button  {
     cursor: pointer;
 }
 
-button:active {
-    background-color: hsl(31, 77%, 52%);
+button:hover {
+    background-color: transparent;
     border: 1.5px solid #fff;
+    
+}
+
+a:hover {
     color: #fff;
 }
+
+
 
 
 
