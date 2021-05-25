@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+p {
+    font-size: .85em;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.container {
+    position: center;
+
+}
+
+
+.card-container {
+    display: flex;
+
+
+}
+
+.card-container > * {
+    flex-basis: 100%;
+    /* flex: 0 1 300px; */
+}
+
+.text-container p {
+    padding-top: 1em;
+    font-size: .75em;
+}
+
+.card {
+    flex-direction: row;
+    width: 200px;
+    padding: 2em 2em;
+    color: #fff;
+
+}
+
+.card.one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+
+}
+
+.card.two {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.card.three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px  7px 0;
+
+}
+
+.card img {
+    padding-bottom: 1em;
+    width: 50px;
+}
+
+.btn {
+    margin-top: 50px;
+}
+
+.btn button {
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px ;
+}
+
+
+
+.btn1 a {
+    color: hsl(31, 77%, 52%);;
+}
+
+.btn2 a {
+    color: hsl(184, 100%, 22%);;
+}
+
+.btn3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+button  {
+    font-size: .75em;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(31, 77%, 52%);
+    border: 1.5px solid #fff;
+    color: #fff;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 100px;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 370px) {
+
+    .card-container {
+        flex-direction: column;
+
+    }
+
+    
+
+    .card.one {
+        
+        border-radius: 7px 7px 0 0;
+    
+    }
+
+    .card.three {
+        
+        border-radius: 0 0 7px  7px;
+    
+    }
+
+
+    
+
+
+}
